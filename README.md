@@ -19,6 +19,21 @@ Currently implemented:
 
 Slide the speed control to the left to increase the processing rate, and to the right to decrease. The default program prints `Hi ` repeatedly. This can be changed by editing the opcodes in the `rom` array in `src/sketch.js`.
 
+## CPU state
+
+The following labels are used in green information block at the top of the visualization:
+
+| Label | Meaning |
+|-------|---------|
+| A     | CPU A register |
+| X     | CPU X register |
+| Y     | CPU Y register |
+| St    | CPU status flags |
+| PC    | CPU program counter |
+| SP    | CPU stack pointer |
+
+The line below shows the current stage of execution for the CPU, such as fetching or decoding an instruction, or performing a decoded instruction.
+
 ## Memory map
 
 Peripherals and memories are placed within the following physical CPU memory map:
