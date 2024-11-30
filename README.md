@@ -12,6 +12,17 @@ Currently implemented:
  * Simple LCD screen
  * Address decoding logic
 
+## Memory map
+
+| Address range   | Description |
+|-----------------|-------------|
+| 0x0000 - 0x3FFF | 16KB RAM |
+| 0x4000          | LCD data register via VIA ORB register |
+| 0x4001          | LCD control register via VIA ORA register (toggle bit 0 to read and display character at 0x4000) |
+| 0x4002          | VIA DIRB register |
+| 0x4003          | VIA DIRA register |
+| 0xC000 - 0xFFFF | 16KB ROM |
+
 ## Try it live
 
 * Play a recent version of the code [here](https://editor.p5js.org/diodesign/full/l1hndGSAK) in your browser.
