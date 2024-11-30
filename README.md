@@ -12,7 +12,16 @@ Currently implemented:
  * Simple LCD screen
  * Address decoding logic
 
+## Try it live
+
+* Play a recent version of the code [here](https://editor.p5js.org/diodesign/full/l1hndGSAK) in your browser.
+* Tweak and play a recent version of the code [here](https://editor.p5js.org/diodesign/sketches/l1hndGSAK) in your browser.
+
+Slide the speed control to the left to increase the processing rate, and to the right to decrease. The default program prints `Hi ` repeatedly. This can be changed by editing the opcodes in the `rom` array in `src/sketch.js`.
+
 ## Memory map
+
+Peripherals and memories are placed within the following physical CPU memory map:
 
 | Address range   | Description |
 |-----------------|-------------|
@@ -22,13 +31,6 @@ Currently implemented:
 | 0x4002          | VIA DIRB register |
 | 0x4003          | VIA DIRA register |
 | 0xC000 - 0xFFFF | 16KB ROM |
-
-## Try it live
-
-* Play a recent version of the code [here](https://editor.p5js.org/diodesign/full/l1hndGSAK) in your browser.
-* Tweak and play a recent version of the code [here](https://editor.p5js.org/diodesign/sketches/l1hndGSAK) in your browser.
-
-Slide the speed control to the left to increase the processing rate, and to the right to decrease. The default program prints `Hi ` repeatedly. This can be changed by editing the opcodes in the `rom` array in `src/sketch.js`.
 
 ## Future work
 
