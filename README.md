@@ -24,6 +24,7 @@ Slide the speed control to the left to increase the processing rate, and to the 
 * Fully implement the 6502 CPU
 * Implement a means of user input, such as a keyboard
 * Implement a frame buffer for more interesting graphical output
+* Allow the loading of user programs in ROM and RAM space
 
 ## Copyright, contact, and usage
 
